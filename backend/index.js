@@ -1,5 +1,3 @@
-import express  from 'express';
-
 let express = require('express');
 let app = express();
 
@@ -15,14 +13,16 @@ app.listen(3001, function () {
 app.use((req, res) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  console.log(2);
+  console.log(22);
   // if (!req.body) return res.sendStatus(400);
-  console.log(req.data);
+  console.log(req);
   console.log(res.data);
+  console.log(req.body);
 });
 
 app.post('http://localhost:3000/', function (req, res) {
   console.log(2);
+  console.log(req.body);
     res.send('Got a POST request');
   });
 
