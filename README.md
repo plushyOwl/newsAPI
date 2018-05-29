@@ -3,7 +3,9 @@
 ## how to run
 
 ### 1) go to /backend
-### node index.js
+### npm install
+### npm start
 
 ### 2) go to /frontend
+### npm install
 ### npm start 
