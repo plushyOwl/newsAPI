@@ -1,0 +1,22 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
+    "camelcase": ["warn"],
+    "comma-dangle": ["error", "always-multiline"],
+    "indent": ["error", 2],
+    "keyword-spacing": "error",
+    "max-len": ["warn", { "code": 80 }],
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": "error",
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "object-curly-spacing": ["error", "always"],
+    "semi": ["error", "always"],
+    "sort-imports": ["error", {
+      "ignoreCase": true,
+      "ignoreMemberSort": false,
+      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+    }],
+    "strict": ["error", "global"]
+  }
+}

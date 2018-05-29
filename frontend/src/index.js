@@ -1,11 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './components/App';
-import Search from './components/Search';
+import createStore from './utils/Store';
+import { Provider } from 'react-redux';
+import ReactDOM from 'react-dom';
+import React from 'react';
+
+
+const store = createStore();
+
 
 ReactDOM.render(
-    <div>
-    <Search/>
-    <App />
-    </div>,
-     document.getElementById('root'));
+	<Provider store={store}>
+		<App />
+	</Provider>,
+	document.getElementById('root')
+);

@@ -1,9 +1,16 @@
+import Navigator from './Navigator';
 import React, { Component } from 'react';
+import NewsList from './NewsList';
+import Search from './Search';
+
 
 class App extends Component {
   render() {
     return (
-      <div>Hello World from frontend</div>
+     	<div>
+    		<Search />
+    		<NewsList />
+  		</div>
     );
   }
 }
